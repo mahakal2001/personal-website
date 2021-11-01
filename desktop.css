@@ -1,0 +1,227 @@
+/*
+
+ __  __    _    _   _    _    _  __    _    _     
+|  \/  |  / \  | | | |  / \  | |/ /   / \  | |    
+| |\/| | / _ \ | |_| | / _ \ | ' /   / _ \ | |    
+| |  | |/ ___ \|  _  |/ ___ \| . \  / ___ \| |___ 
+|_|  |_/_/   \_\_| |_/_/   \_\_|\_\/_/   \_\_____|
+                                               
+
+
+*/
+
+/* Navbar start */
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.navLogo{
+    text-align: left;
+}
+
+.navHeading h1{
+    float: right;
+    font-size: 2.3rem;
+    padding-top: 25px;
+}
+
+.navMenu{
+    flex-direction: row;
+    justify-content: flex-end;
+    
+
+}
+
+.navMenu a{
+    margin: 5px;
+    padding: 10px 10px;
+    background-color: transparent;
+}
+
+
+/* Navbar End */
+
+
+/* Profile start */
+
+.profile{
+    background: url("images/background.jpg");
+    width: 100%;
+}
+
+.profile .top-icon{
+    position: absolute;
+    
+    right: 60px;
+    width: 150px;
+    height: 150px;
+    top: 30px;
+    transition: height 2s, width 2s, transform 2s;
+
+}
+
+.profile .top-icon:hover{
+    width: 180px;
+    height: 180px;
+}
+
+.profile p{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+
+.profile .buttom-icon{
+    position: absolute;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    bottom: 20px;
+    transition: height 2s, width 2s, transform 2s;
+
+}
+
+
+
+
+.profile .buttom-icon:hover{
+    width: 180px;
+    height: 180px;
+}
+
+
+.profile{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* Profile End */
+
+
+
+/* About me Start here */
+
+.about-me{
+    width: 100%;
+    
+}
+
+.aboutme-img{
+    top: 200px;
+    
+}
+
+.aboutme-img img{
+    height: 270px;
+    width: 250px;
+
+}
+
+
+
+/* About me End here */
+
+
+
+/* Achivement-contract Start here */
+
+
+.achivement{
+    padding-right: 70px;
+}
+
+.moreWay-contract{
+    padding-left: 100px;
+}
+
+.contrantMe{
+    padding-left: 55px;
+}
+
+.contrantMe button{
+    
+    width: 150px;
+
+
+}.media-buttons img{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 42px;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 20px;
+    background-color: white;
+    margin-top: 120px;
+    
+
+
+}
+
+
+.media-buttons img:hover{
+    transform: scale(1.2);
+    background-color: rgb(180, 176, 166);
+}
+
+/* Footer End here */
+
+.footer-menu{
+    margin-top: 14px;
+}
+
+.footer-menu a{
+    margin: 10px;
+    display: inline;
+    
+}
+
+
+/* Footer End here */
+
+
+.media-button img{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 42px;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 20px;
+    background-color: white;
+    
+
+
+}
+
+.media-button img:hover{
+    transform: scale(1.2);
+    background-color: rgb(180, 176, 166);
+}
+
+
+
+
+
+
+
+/* Achivement-contract End here */

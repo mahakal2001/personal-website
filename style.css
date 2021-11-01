@@ -1,0 +1,726 @@
+/*
+
+ __  __    _    _   _    _    _  __    _    _     
+|  \/  |  / \  | | | |  / \  | |/ /   / \  | |    
+| |\/| | / _ \ | |_| | / _ \ | ' /   / _ \ | |    
+| |  | |/ ___ \|  _  |/ ___ \| . \  / ___ \| |___ 
+|_|  |_/_/   \_\_| |_/_/   \_\_|\_\/_/   \_\_____|
+                                               
+
+
+*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+    
+}
+
+
+h2{
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+
+
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+/* Navbar start */
+
+.navbar{
+    background-color: rgb(18, 139, 139);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navLogo img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 5px 5px 15px black;
+
+    
+    
+}
+
+.navLogo img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.navHeading h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Goldman', cursive;
+    
+    
+}
+
+.navMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.navMenu a{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 7px 0px;
+    background-color: rgb(6, 92, 92);
+
+}
+
+.navMenu a:hover{
+    transform: scale(1.1);
+    background-color: rgb(105, 103, 101);
+    color: yellow;
+    
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Navbar End */
+
+
+/* Profile start */
+
+.top-icon{
+    width: 120px;
+    height: 120px;
+    
+    padding: 10px;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 45%;
+}
+
+.buttom-icon{
+    width: 120px;
+    height: 120px;
+}
+
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+    background: url("images/background.jpg");
+    width: 100%;
+}
+
+
+.profile .top-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+
+}
+
+.profile .top-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-describetion h1{
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    
+}
+
+.profile p{
+    text-align: center;
+    color: rgb(231, 162, 216);
+    margin: 0 auto 20px auto;
+    width: 90%;
+    font-family: 'Charmonman', cursive;
+    font-weight: bold;
+}
+
+
+.profile .buttom-icon{
+    position: absolute;
+    left: 50px;
+    
+    transition: transform 2s;
+
+}
+
+
+
+
+.profile .buttom-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Profile End */
+
+
+/* About me starts here */
+
+.about-me{
+    background-color: rgb(56, 182, 182);
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.aboutme-img img{
+    border: 5px solid white;
+    height: 220px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+.about-me p{
+    text-align: center;
+    
+    
+}
+
+.pop-stylw{
+    font-family: 'Metal Mania', cursive;
+    color: rgb(238, 89, 109);
+}
+
+.cv-button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+
+.cv-button:hover{
+    transform: scale(1.2);
+}
+
+
+.aboutme-hr{
+    border: dotted 6px rgb(131, 121, 121);
+    border-bottom: none;
+}
+
+.aboutme-hover a:hover{
+    color: black;
+}
+
+
+
+.about-me{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* About me End here */
+
+
+
+/* Personal Expretion start here -*/
+
+/* Work Expertion Start */
+
+.personal-expretion{
+    padding: 1% 0%;
+    background: url("images/back2.jpg");
+}
+
+.img-icon img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px black;
+
+}
+
+.img-icon img:hover{
+    transform: scale(1.2);
+}
+
+
+
+.card{
+    padding: 10px;
+    background-color: rgb(110, 102, 102);
+    text-align: center;
+    height: 600px;
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+.card:hover{
+    box-shadow: 15px 15px 35px black;
+    
+}
+
+.title-h{
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.title-h:hover{
+    background-color: white;
+    color: black;
+}
+
+.descrive-work{
+    color: white;
+}
+
+
+
+.personal-expretion::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Work Expretion End*/
+
+
+/* Education Expretion Start*/
+
+.personal-expretion{
+    padding: 1% 0%;
+}
+
+.img-icon img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+}
+
+.img-icon img:hover{
+    transform: scale(1.2);
+}
+
+
+
+.card{
+    padding: 10px;
+    background-color: rgb(110, 102, 102);
+    
+    height: 600px;
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+.card:hover{
+    box-shadow: 15px 15px 35px black;
+}
+
+
+.descrive-wor{
+    color: black;
+    text-align: left;
+}
+
+
+
+.strong{
+    color: white;
+}
+
+
+.personal-expretion::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+hr{
+    color: white;
+}
+/* Education Expretion End*/
+
+/* Skill Expretion Start*/
+
+.personal-expretion{
+    padding: 1% 0%;
+}
+
+.img-icon img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+}
+
+.img-icon img:hover{
+    transform: scale(1.2);
+}
+
+.skill-infromation{
+    padding: 10px;
+}
+
+.skill-infromation li{
+    color: white;
+    list-style-type: none;
+    margin: 25px 10px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+}
+
+.skill-infromation li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    
+    background-color: rgb(152, 231, 231);
+    width: 100%;
+    height: 15px;
+    border-radius: 1000px;
+}
+
+.skill-infromation li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+
+    background-color: rgb(203, 214, 214);
+    width: 0;
+    height: 15px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+   /* animation-fill-mode: forwards; */
+}
+
+.card li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 100%;
+        background-color: blueviolet;
+    }
+    
+}
+
+.card li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 95%;
+        background-color: rgb(34, 20, 221);
+    }
+    
+}
+
+.card li.py::after{
+    animation-name: py;
+}
+@keyframes py {
+    to{
+        width: 90%;
+        background-color: rgb(27, 171, 238);
+    }
+    
+}
+
+.card li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 85%;
+        background-color: rgb(28, 221, 21);
+    }
+    
+}
+
+.card li.java::after{
+    animation-name: java;
+}
+@keyframes java {
+    to{
+        width: 80%;
+        background-color: rgb(241, 245, 13);
+    }
+    
+}
+
+.card li.c::after{
+    animation-name: c;
+}
+@keyframes c {
+    to{
+        width: 75%;
+        background-color: rgb(233, 129, 10);
+    }
+    
+}
+
+.card li.cplus::after{
+    animation-name: cplus;
+}
+@keyframes cplus {
+    to{
+        width: 70%;
+        background-color: rgb(226, 64, 43);
+    }
+    
+}
+
+.card:hover{
+    box-shadow: 15px 15px 35px black;
+}
+
+
+
+
+.personal-expretion::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Skill Expretion End*/
+
+
+/* Personal Expretion start here */
+
+
+
+/* Achivement-contract Start here */
+
+
+.Achivement-contract{
+    padding: 1% 7%;
+    background-color: rgb(56, 182, 182);
+    color: white;
+}
+
+
+.contrantMe{
+    text-align: center;
+}
+
+
+.contrantMe input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+
+.contrantMe input:hover{
+    background-color: rgb(230, 226, 222);
+}
+
+.contrantMe textarea:hover{
+    background-color: rgb(230, 226, 222);
+}
+
+.contrantMe button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    cursor: pointer;
+    width: 100px;
+    font-size: 1.1rem;
+
+
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* more way to contract start here */
+
+.moreWay-contract{
+    text-align: center;
+}
+
+.media-buttons img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    
+
+
+}
+
+
+.media-buttons img:hover{
+    transform: scale(1.2);
+    background-color: rgb(180, 176, 166);
+}
+
+
+.media-button img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    
+
+
+}
+
+.media-button img:hover{
+    transform: scale(1.2);
+    background-color: rgb(180, 176, 166);
+}
+
+
+/* More way to contract End here */
+
+.Achivement-contract::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* Achivement-contract End here */
+
+
+
+/* Footer start here */
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    
+    text-align: center;
+    
+
+}
+
+
+.footer a{
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+
+
+.footer a:hover{
+    color: gray;
+}
+
+.footer-descrivetion p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* Footer End here */
+
+
