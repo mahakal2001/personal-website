@@ -182,20 +182,7 @@
     background-color: rgb(180, 176, 166);
 }
 
-/* Footer End here */
 
-.footer-menu{
-    margin-top: 14px;
-}
-
-.footer-menu a{
-    margin: 10px;
-    display: inline;
-    
-}
-
-
-/* Footer End here */
 
 
 .media-button img{
@@ -225,3 +212,18 @@
 
 
 /* Achivement-contract End here */
+
+/* Footer start here */
+
+.footer-menu{
+    margin-top: 14px;
+}
+
+.footer-menu a{
+    margin: 10px;
+    display: inline;
+    
+}
+
+
+/* Footer End here */

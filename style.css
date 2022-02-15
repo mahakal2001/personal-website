@@ -159,8 +159,18 @@ h2{
 
 }
 
-.profile .top-icon:hover{
-    transform: rotate(360deg);
+.profile .top-icon{
+    transition: all linear;
+    animation: rot 2s linear  infinite  ;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .profile-describetion h1{
@@ -191,8 +201,18 @@ h2{
 
 
 
-.profile .buttom-icon:hover{
-    transform: rotate(360deg);
+.profile .buttom-icon{
+    transition: all linear;
+    animation: rot 2s linear  infinite  ;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .profile{
@@ -217,7 +237,7 @@ h2{
 
 .aboutme-img img{
     border: 5px solid white;
-    height: 220px;
+    height: 180px;
     width: 200px;
     border-radius: 50%;
 
